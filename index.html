@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Opinion Writing Blog</title>
+<style>
+      bod {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  Background-color:#6acbff;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+}
+
+.login-icon,
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.login-icon img,
+.menu-icon img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="icon-container">
+    <div class="login-icon">
+      <a href="index.html" onclick="openFile('index.html')">
+        <img src="l2.png" alt="Login">
+      </a>
+    </div>
+    <div class="menu-icon">
+      <a href="login.html" onclick="openFile('login.html')">
+        <img src="l1.png" alt="Menu">
+      </a>         
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function openFile(fileName) {
+      // Open the file or perform the desired action
+      window.open(fileName, '_blank');
+    }
+  </script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #a400ff;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input, select {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    button {
+        background: #ff2b4a;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #4a54e1;
+    }
+   #p0{
+        Font-size:14px;
+        Color: #cf80ff;
+        text-align:center;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h3>Welcome to Haruna Ya'u tech English sentences, Blog</h3>
+</header>
+<div class="container">
+    <p id="p0">
+        Welcome to Haruna Ya'u's Tech English Sentence, Blog! If you're eager to explore the exciting world of technology while improving your English, you've come to the right place. Here at Haruna Ya'u's blog, we break down complex tech topics into easy-to-understand English, making learning both fun and accessible. Whether you're a tech enthusiast, a student, or just curious about the digital world, our blog is designed to help you navigate the fascinating tech landscape with ease and confidence. Join us as we delve into the latest tech trends, innovations, and insights, all simplified for your understanding. Let's embark on this educational journey together!
+    </p>
+    <h2>Register</h2>
+    <form id="registrationForm">
+       <a>First Name </a> <input type="text" placeholder="First Name" required>
+       <a>Surname</a> <input type="text" placeholder="Surname"required>
+        <a>Country</a><input type="text" placeholder="Country"required>
+       <a>State</a> <input type="text" placeholder="State" required>
+        <a>Select</a><select required><a >Select</a>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+      
+        <a>Email address</a><input type="email" placeholder="Email address" required>
+       <a>Password </a> <input type="password" placeholder="Password" required>
+       <a>Confirm Password</a> <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the actual form submission
+
+        // Assuming you have an API or server-side logic to handle the registration
+        // Here we'll just simulate form submission by saving to localStorage and redirecting
+
+        // Normally, you would not store sensitive data like passwords in localStorage in plain text
+        localStorage.setItem('userEmail', document.querySelector('input[type="email"]').value);
+        alert('Registration successful!');
+        window.location.href = 'home.html'; // Redirect to home page
+    });
+</script>
+</body>
+</html>
