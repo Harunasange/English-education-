@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinions Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        background: linear-gradient(45deg, #f3ec78, #af4261);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+   background: linear-gradient(450deg, black, white, #91ff80, #7b55ff);
+   display: flexd;   
+    color: #fff;
+    padding: 20px;
+    Border :20px;
+    Color: #11100b;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.share-icons {
+    display: flex;
+}
+
+.share-icon {
+    margin-left: 10px;
+}
+
+.share-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #543295;
+    border-radius: 5px;
+                            Font-size: 13px;
+}
+
+.opinion-menus {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opinion-menus button {
+    margin: 0 10px;
+    padding: 100px 2px;
+    background-color: #330c8f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    Pending:px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+    </style>
+    <style>
+      
+
+      .haruna {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    Padding: 20px;
+}
+
+.haruna button {
+    margin: 0 10px;
+    padding: 10px 2px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home page</a></li>
+                <li><a href="index.html">Log Out</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="share-icons">
+                <a href="index.html" class="share-icon"><img src="sh.png" alt="Share"></a>
+                             
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p>
+            A strong understanding of the English language is essential for both writing and reading effectively. In this blog, you will find informative insights on the English language.   
+            </p>
+        </div>
+        <h1 style="color: red;"><center>Menus</center></h1>
+        <div class="opinion-menus">
+            <button><a href="english.html" style="color: green;">First English Sentence</a></button>
+            <button><a href="english2.html" style="color: green;">Second English Sentence</a></button>
+            </div>
+            
+        </div>
+    </main>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+
+    </script>
+    <style>
+        
+      footer {
+           background: linear-gradient(450deg, #f3ec78, white); 
+            #89bc5eec;
+            color: green;
+       text-color:#4CAF50;   
+            text-align: center;
+            padding: 10px;
+            position: fixed
+            bottom: 0;
+            width: 95%;
+                                  Font-size: 13px;
+           Pending:20px;
+        }
+    </style>
+    <section>
+    <footer>
+        <p>&copy; 2024. Develop by Haruna ya'u Sange Zamfara State.</p>
+    </footer></section>
+</body>
+</html>
